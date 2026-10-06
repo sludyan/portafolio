@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional | Administración de Empresas</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            card: '#1e293b',
+                            accent: '#38bdf8',
+                            hover: '#0ea5e9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark">
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/85 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#inicio" class="text-xl font-bold tracking-wider text-brand-accent">PORTAFOLIO<span class="text-white">PRO</span></a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#inicio" class="hover:text-brand-accent transition">Inicio</a>
+                <a href="#sobre-mi" class="hover:text-brand-accent transition">Sobre Mí</a>
+                <a href="#formacion" class="hover:text-brand-accent transition">Formación</a>
+                <a href="#proyectos" class="hover:text-brand-accent transition">Proyectos & Evidencias</a>
+                <a href="#experiencia" class="hover:text-brand-accent transition">Mi Historia</a>
+                <a href="#contacto" class="hover:text-brand-accent transition">Contacto</a>
+            </nav>
+            <a href="#contacto" class="hidden md:inline-block px-5 py-2.5 rounded-full bg-brand-accent text-brand-dark font-semibold text-sm hover:bg-brand-hover transition shadow-lg shadow-brand-accent/20">
+                ¡Hablemos!
+            </a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN INICIO (HERO) -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-slate-800/80 border border-slate-700 text-brand-accent text-xs font-semibold tracking-wider uppercase mb-6 shadow-sm">
+                Estudiante de Administración de Empresas — Universidad Sergio Arboleda
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Impulsando la visión y el <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-cyan-300">liderazgo empresarial</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Construyendo un futuro enfocado en la gestión estratégica, la innovación y el desarrollo de proyectos de alto impacto.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#proyectos" class="px-8 py-4 rounded-xl bg-brand-accent text-brand-dark font-bold hover:bg-brand-hover transition shadow-xl shadow-brand-accent/25 flex items-center justify-center gap-2">
+                    Ver Proyectos y Tareas
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </a>
+                <a href="#formacion" class="px-8 py-4 rounded-xl bg-slate-800 border border-slate-700 font-bold hover:bg-slate-700 transition flex items-center justify-center">
+                    Ver Certificados
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="py-24 px-6 bg-slate-950/50 border-t border-slate-800/60">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-3">¿Quién soy?</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold">Sobre Mí</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-6 bg-brand-card p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-xl relative">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 rounded-xl bg-brand-accent/10 text-brand-accent border border-brand-accent/20">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <h4 class="text-xl sm:text-2xl font-bold text-white leading-tight">Estudiante, emprendedor y apasionado por los negocios</h4>
+                    </div>
+                    
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base mb-6">
+                        Soy estudiante de primer semestre de <strong>Administración de Empresas</strong> en la <strong>Universidad Sergio Arboleda</strong>. Me interesa la gestión empresarial, la estrategia, la innovación y la tecnología como herramientas para crear proyectos que generen valor y un impacto real.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Me considero una persona disciplinada, ambiciosa y con mentalidad de crecimiento. Disfruto aprender, asumir nuevos retos y rodearme de personas que me inspiran. Actualmente estoy enfocado en fortalecer mis habilidades, construir mi futuro profesional y desarrollar proyectos propios que me permitan generar libertad y aportar a la sociedad.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <h5 class="font-bold text-lg text-white flex items-center gap-3">
+                                <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span> Mi Visión
+                            </h5>
+                            <svg class="w-5 h-5 text-brand-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Convertirme en un empresario capaz de liderar y construir empresas sólidas, combinando la gestión, la tecnología y la innovación para generar soluciones que transformen realidades y aporten al desarrollo de Colombia y la región.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
+                        <div class="flex items-start justify-between gap-4 mb-3">
+                            <h5 class="font-bold text-lg text-white flex items-center gap-3">
+                                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span> Intereses Actuales
+                            </h5>
+                            <svg class="w-5 h-5 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-400 text-xs sm:text-sm">
+                            <ul class="space-y-1.5">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span> Administración y gestión empresarial</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span> Estrategia de negocios</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span> Tecnología e innovación</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span> Marketing digital</li>
+                            </ul>
+                            <ul class="space-y-1.5">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Finanzas e inversión</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Desarrollo personal</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Liderazgo</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Emprendimiento</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <h5 class="font-bold text-lg text-white flex items-center gap-3">
+                                <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span> Proyectos y Emprendimiento
+                            </h5>
+                            <svg class="w-5 h-5 text-purple-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Tengo la visión de crear y desarrollar proyectos en diferentes industrias, especialmente en moda, tecnología y bienes raíces, que me permitan construir marcas sólidas, generar empleo y dejar un impacto positivo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN FORMACIÓN Y CURSOS -->
+    <section id="formacion" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-3">Aprendizaje Continuo</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold">Cursos y Certificaciones</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-brand-card p-8 rounded-2xl border border-slate-800 hover:border-brand-accent/50 transition flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block py-1 px-3 rounded-full bg-brand-accent/10 text-brand-accent text-xs font-semibold mb-4">IE Business School</span>
+                        <h4 class="text-2xl font-bold mb-3">Agile Accelerator: Navigating Lean Startup, Agile, and Scrum</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Aprendizaje sobre metodologías ágiles, marcos de trabajo como Scrum y enfoques Lean Startup para el desarrollo y optimización de proyectos de negocio.
+                        </p>
+                    </div>
+                    <a href="https://www.coursera.org/account/accomplishments/records/Z50RALDOEDZ6" target="_blank" class="text-brand-accent text-sm font-semibold hover:underline flex items-center gap-1">
+                        Ver certificado oficial &rarr;
+                    </a>
+                </div>
+                <div class="bg-brand-card p-8 rounded-2xl border border-slate-800 hover:border-brand-accent/50 transition flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block py-1 px-3 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">UNAM</span>
+                        <h4 class="text-2xl font-bold mb-3">Ser más creativos</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Exploración de conceptos, hábitos y herramientas para fortalecer la creatividad, la innovación y la resolución de problemas desde enfoques originales.
+                        </p>
+                    </div>
+                    <a href="https://www.coursera.org/account/accomplishments/records/4O7UR9LKE818" target="_blank" class="text-brand-accent text-sm font-semibold hover:underline flex items-center gap-1">
+                        Ver certificado oficial &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS Y EVIDENCIAS (TIPO TAREA / FACTURAS CON IMÁGENES) -->
+    <section id="proyectos" class="py-24 px-6 bg-slate-950/50 border-t border-slate-800/60">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-3">Portafolio de Trabajos</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold">Proyectos y Evidencias Académicas</h3>
+                <p class="text-slate-400 text-sm mt-2 max-w-2xl mx-auto">Demostración práctica de tareas, facturas comerciales, sistemas de facturación y análisis empresariales realizados.</p>
+            </div>
+
+            <!-- Contenedor de Proyectos / Tareas -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Proyecto 1: Ejemplo de Factura o Sistema de Facturación -->
+                <div class="bg-brand-card rounded-3xl overflow-hidden border border-slate-800 hover:border-brand-accent/60 transition shadow-xl flex flex-col">
+                    <!-- Imagen de la Tarea / Factura -->
+                    <div class="h-64 relative bg-slate-900 overflow-hidden flex items-center justify-center p-4">
+                        <!-- Aquí puedes cambiar './factura.png' por la imagen real de tu factura o tarea -->
+                        <img src="./1.jpeg" alt="Sistema de Facturación" class="w-full h-full object-cover rounded-xl border border-slate-700">
+                        <span class="absolute top-4 right-4 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-brand-dark/90 text-brand-accent border border-slate-700 shadow">Gestión Comercial</span>
+                    </div>
+                    <!-- Detalles del Proyecto -->
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h4 class="text-2xl font-bold text-white mb-3">Sistema de Facturación Comercial (Empresa ABC)</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Desarrollo e implementación de un modelo de factura automatizada y cálculo de compras corporativas. Diseñado para optimizar los procesos de cobro, control de inventario y registro de transacciones.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 rounded-lg bg-slate-900 text-cyan-400 text-xs font-medium border border-slate-800">Python</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-900 text-brand-accent text-xs font-medium border border-slate-800">Administración</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-900 text-purple-400 text-xs font-medium border border-slate-800">Contabilidad</span>
+                        </div>
+                        <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                            <span class="text-xs text-slate-500">Evidencia subida: Agosto 2026</span>
+                            <!-- Puedes cambiar el enlace o archivo descargable aquí -->
+                            <a href="#contacto" class="text-brand-accent text-sm font-semibold hover:underline flex items-center gap-1">
+                                Ver Detalles &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Otro Proyecto o Tarea -->
+                <div class="bg-brand-card rounded-3xl overflow-hidden border border-slate-800 hover:border-brand-accent/60 transition shadow-xl flex flex-col">
+                    <!-- Imagen de la Tarea -->
+                    <div class="h-64 relative bg-slate-900 overflow-hidden flex items-center justify-center p-4">
+                        <!-- Aquí puedes poner otra imagen de tarea o proyecto -->
+                        <img src="./2.jpeg" alt="Proyecto de Negocios" class="w-full h-full object-cover rounded-xl border border-slate-700">
+                        <span class="absolute top-4 right-4 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-brand-dark/90 text-cyan-400 border border-slate-700 shadow">Plan de Negocios</span>
+                    </div>
+                    <!-- Detalles del Proyecto -->
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h4 class="text-2xl font-bold text-white mb-3">Estrategia Lean Startup & Agile</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Proyecto de validación de modelo de negocio enfocado en metodologías ágiles (Scrum). Análisis de mercado, reducción de riesgos y optimización de recursos para emprendimientos emergentes.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 rounded-lg bg-slate-900 text-cyan-400 text-xs font-medium border border-slate-800">Lean Startup</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-900 text-brand-accent text-xs font-medium border border-slate-800">Scrum</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-900 text-purple-400 text-xs font-medium border border-slate-800">Estrategia</span>
+                        </div>
+                        <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                            <span class="text-xs text-slate-500">Evidencia subida: Septiembre 2026</span>
+                            <a href="#contacto" class="text-brand-accent text-sm font-semibold hover:underline flex items-center gap-1">
+                                Ver Detalles &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Nota informativa para cuando quiera subir más proyectos -->
+            <div class="mt-12 text-center bg-brand-card/50 border border-slate-800 p-6 rounded-2xl max-w-2xl mx-auto">
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    💡 <strong class="text-slate-200">¿Cómo agregar más proyectos o facturas?</strong> Solo necesitas duplicar cualquiera de los bloques de arriba en tu código HTML, cambiar la ruta de la imagen (ej: <code class="text-brand-accent">src="./tu-factura.png"</code>) y actualizar los textos con la información de tu nueva tarea o entrega.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MI HISTORIA / PASIÓN (Fútbol) -->
+    <section id="experiencia" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-3">Más allá de las aulas</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold">Mi Pasión por el Fútbol y la Disciplina</h3>
+                <p class="text-slate-400 text-sm mt-2 max-w-2xl mx-auto">El deporte forjó los valores de resiliencia, constancia y trabajo en equipo aplicados al mundo empresarial.</p>
+            </div>
+
+            <div class="bg-brand-card p-8 sm:p-10 rounded-3xl border border-slate-800 mb-12 max-w-4xl mx-auto text-center shadow-xl">
+                <p class="text-slate-300 leading-relaxed text-base sm:text-lg mb-4">
+                    Desde niño pasé una etapa muy bonita practicando fútbol. Vivir la emoción de estar en la cancha, compartir con compañeros y sentir los colores con orgullo me enseñó que la disciplina y el esfuerzo diario son la única clave para alcanzar las metas.
+                </p>
+                <p class="text-brand-accent font-medium text-sm">
+                    "Igual que en un partido, en los negocios y proyectos profesionales el éxito se construye con estrategia, constancia y apoyo en equipo."
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-brand-accent/60 transition shadow-xl flex flex-col">
+                    <div class="h-80 relative bg-slate-950 overflow-hidden flex items-center justify-center p-2">
+                        <img src="./1.jpeg" alt="Ceremonia de Himno" class="max-h-full max-w-full object-contain object-center group-hover:scale-105 transition duration-500 rounded-lg">
+                        <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-brand-card to-transparent opacity-80 pointer-events-none"></div>
+                        <span class="absolute bottom-3 left-4 text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-brand-dark/90 text-brand-accent border border-slate-700 shadow">Orgullo y Enfoque</span>
+                    </div>
+                    <div class="p-6 mt-auto">
+                        <h4 class="font-bold text-lg mb-1 text-white">Ceremonia e Identidad</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">La seriedad, el respeto y la concentración antes de cada reto importante en el terreno de juego.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-brand-accent/60 transition shadow-xl flex flex-col">
+                    <div class="h-80 relative bg-slate-900 overflow-hidden flex items-center justify-center">
+                        <img src="./2.jpeg" alt="Jugada en Acción" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent opacity-60 pointer-events-none"></div>
+                        <span class="absolute bottom-3 left-4 text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-brand-dark/90 text-cyan-400 border border-slate-700 shadow">Determinación</span>
+                    </div>
+                    <div class="p-6 mt-auto">
+                        <h4 class="font-bold text-lg mb-1 text-white">Acción y Entrega</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">Dejarlo todo en la cancha, buscando siempre la mejor jugada y superando los obstáculos con agilidad.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-brand-accent/60 transition shadow-xl flex flex-col">
+                    <div class="h-80 relative bg-slate-900 overflow-hidden flex items-center justify-center">
+                        <img src="./3.jpeg" alt="Compañerismo y Equipo" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent opacity-60 pointer-events-none"></div>
+                        <span class="absolute bottom-3 left-4 text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-brand-dark/90 text-purple-400 border border-slate-700 shadow">Compañerismo</span>
+                    </div>
+                    <div class="p-6 mt-auto">
+                        <h4 class="font-bold text-lg mb-1 text-white">Espíritu de Equipo</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">El compañerismo y la amistad cultivados desde pequeños, base fundamental del trabajo colaborativo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="py-24 px-6 bg-slate-950/50 border-t border-slate-800/60">
+        <div class="max-w-3xl mx-auto bg-brand-card p-10 sm:p-12 rounded-3xl border border-slate-800 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="text-center mb-10 relative z-10">
+                <h2 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-2">Contacto</h2>
+                <h3 class="text-3xl font-bold">¡Hablemos o hagamos negocios!</h3>
+                <p class="text-slate-400 text-sm mt-2">¿Tienes alguna propuesta, duda o quieres conectar? Escríbeme un mensaje.</p>
+            </div>
+            <form class="space-y-6 relative z-10" onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito! Gracias por visitar el portafolio.');">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Tu Nombre</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 focus:outline-none focus:border-brand-accent transition" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Correo Electrónico</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 focus:outline-none focus:border-brand-accent transition" placeholder="tucorreo@ejemplo.com">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Mensaje</label>
+                    <textarea rows="4" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 focus:outline-none focus:border-brand-accent transition" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <button type="submit" class="w-full py-4 rounded-xl bg-brand-accent text-brand-dark font-bold hover:bg-brand-hover transition shadow-lg shadow-brand-accent/20">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 px-6 bg-slate-950 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 | Portafolio Profesional - Administración de Empresas (Universidad Sergio Arboleda).</p>
+    </footer>
+
+</body>
+</html>
