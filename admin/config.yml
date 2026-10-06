@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "content/uploads"
+public_folder: "/content/uploads"
+
+collections:
+  - name: "proyectos"
+    label: "Proyectos y Tareas"
+    folder: "content/proyectos"
+    create: true
+    fields:
+      - {label: "Título del Proyecto", name: "title", widget: "string"}
+      - {label: "Fecha", name: "date", widget: "datetime"}
+      - {label: "Imagen de la Tarea/Factura", name: "image", widget: "image"}
+      - {label: "Categoría", name: "categoria", widget: "string"}
+      - {label: "Descripción", name: "body", widget: "markdown"}
+      - label: "Tecnologías utilizadas"
+        name: "tags"
+        widget: "list"
