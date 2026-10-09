@@ -204,6 +204,34 @@
                         <p class="text-slate-400 text-sm leading-relaxed mb-6">
                             Desarrollo e implementación de un modelo de factura automatizada y cálculo de compras corporativas. Diseñado para optimizar los procesos de cobro, control de inventario y registro de transacciones.
                         </p>
+                        <!-- Bloque de Código fuente en Python integrado -->
+                        <div class="mb-6 bg-slate-950 p-4 rounded-xl border border-slate-800 overflow-x-auto">
+                            <p class="text-xs font-semibold text-brand-accent mb-2 uppercase tracking-wider">Código fuente (Python):</p>
+                            <pre class="text-xs text-slate-300 font-mono leading-relaxed"><code>import os
+os.system("cls")
+print("Bienvenido al sistema de factura de la empresa Ropa")
+
+cliente = "Santiago Vergara"
+np = "Jean"
+pp = 3000
+cp = 3
+nc = "Camisa"
+pc = 2000
+cc = 5
+
+sc = pc * cc
+sp = pp * cp
+pdc = 10
+pdp = 20
+vdc = sc * pdc / 100
+vdp = sp * pdp / 100
+total = (sp - vdp) + (sc - vdc)
+piva = 16 / 100
+iva = total * piva
+
+print("Subtotal:", (sp + sc))
+print("Total a pagar:", total + iva)</code></pre>
+                        </div>
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="px-3 py-1 rounded-lg bg-slate-900 text-cyan-400 text-xs font-medium border border-slate-800">Python</span>
                             <span class="px-3 py-1 rounded-lg bg-slate-900 text-brand-accent text-xs font-medium border border-slate-800">Administración</span>
